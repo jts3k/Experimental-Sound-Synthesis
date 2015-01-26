@@ -359,7 +359,7 @@
 ,
 									"style" : "",
 									"text" : "autopattr",
-									"varname" : "u880003060"
+									"varname" : "u806005230"
 								}
 
 							}
@@ -2018,13 +2018,102 @@
 						"showontab" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-25",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "signal" ],
+									"patching_rect" : [ 1072.06665, 216.0, 42.0, 22.0 ],
+									"presentation_rect" : [ 1072.06665, 226.0, 0.0, 0.0 ],
+									"style" : "",
+									"text" : "*~ 0.5"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-24",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "signal" ],
+									"patching_rect" : [ 1015.066589, 216.0, 42.0, 22.0 ],
+									"style" : "",
+									"text" : "*~ 0.5"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-21",
+									"linecount" : 3,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 794.566589, 281.0, 292.0, 47.0 ],
+									"presentation_rect" : [ 866.0, 255.0, 0.0, 0.0 ],
+									"style" : "",
+									"text" : "We can only encode mono sound sources.  If your source is stereo, you may want to \"fold it down\" by mixing the left and right channels"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Arial Italic",
+									"fontsize" : 12.0,
+									"id" : "obj-43",
+									"linecount" : 6,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 121.0, 16.0, 392.0, 87.0 ],
+									"style" : "",
+									"text" : "These patches make use of the Higher Order Ambisonics (HOA) Library, available at http://www.mshparisnord.fr/hoalibrary/en/.  The HOA library provides objects for Max, PD, and VST plugins.  The library for Max should be copied to your \"packages\" folder.  You can read more about packages for Max by searching the Max Documentation (in the Help menu).",
+									"textcolor" : [ 0.30292, 0.30292, 0.30292, 1.0 ],
+									"varname" : "autohelp_top_description[1]"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"angle" : 0.0,
+									"bgcolor" : [ 0.94324, 0.954082, 0.954082, 1.0 ],
+									"border" : 1,
+									"bordercolor" : [ 0.75, 0.75, 0.75, 1.0 ],
+									"id" : "obj-44",
+									"maxclass" : "panel",
+									"mode" : 0,
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 121.0, 16.0, 392.0, 87.0 ],
+									"proportion" : 0.39,
+									"rounded" : 0,
+									"style" : ""
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-7",
+									"linecount" : 2,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 121.0, 160.0, 150.0, 33.0 ],
+									"style" : "",
+									"text" : "Spatialize individual sounds, or the entire field"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"hidden" : 1,
 									"id" : "obj-1",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 1116.0, 11.0, 72.0, 22.0 ],
+									"patching_rect" : [ 1150.0, 81.0, 72.0, 22.0 ],
 									"style" : "",
 									"text" : "loadmess 1"
 								}
@@ -2036,7 +2125,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 933.0, 49.0, 59.0, 20.0 ],
+									"patching_rect" : [ 1015.066589, 146.0, 59.0, 20.0 ],
 									"style" : "",
 									"text" : "Sound  4"
 								}
@@ -2048,7 +2137,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 731.0, 49.0, 59.0, 20.0 ],
+									"patching_rect" : [ 813.066589, 146.0, 59.0, 20.0 ],
 									"style" : "",
 									"text" : "Sound  3"
 								}
@@ -2060,7 +2149,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 548.0, 49.0, 59.0, 20.0 ],
+									"patching_rect" : [ 630.066589, 146.0, 59.0, 20.0 ],
 									"style" : "",
 									"text" : "Sound  2"
 								}
@@ -2072,7 +2161,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 332.0, 49.0, 55.0, 20.0 ],
+									"patching_rect" : [ 456.0, 146.0, 55.0, 20.0 ],
 									"style" : "",
 									"text" : "Sound 1"
 								}
@@ -2113,7 +2202,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 5,
 									"outlettype" : [ "signal", "signal", "signal", "", "dictionary" ],
-									"patching_rect" : [ 933.0, 76.0, 150.0, 30.0 ],
+									"patching_rect" : [ 1015.066589, 173.0, 150.0, 30.0 ],
 									"style" : ""
 								}
 
@@ -2153,7 +2242,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 5,
 									"outlettype" : [ "signal", "signal", "signal", "", "dictionary" ],
-									"patching_rect" : [ 731.0, 76.0, 150.0, 30.0 ],
+									"patching_rect" : [ 813.066589, 173.0, 150.0, 30.0 ],
 									"style" : ""
 								}
 
@@ -2193,7 +2282,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 5,
 									"outlettype" : [ "signal", "signal", "signal", "", "dictionary" ],
-									"patching_rect" : [ 548.0, 76.0, 150.0, 30.0 ],
+									"patching_rect" : [ 630.066589, 173.0, 150.0, 30.0 ],
 									"style" : ""
 								}
 
@@ -2233,7 +2322,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 5,
 									"outlettype" : [ "signal", "signal", "signal", "", "dictionary" ],
-									"patching_rect" : [ 336.0, 76.0, 150.0, 30.0 ],
+									"patching_rect" : [ 460.0, 173.0, 150.0, 30.0 ],
 									"style" : ""
 								}
 
@@ -2245,7 +2334,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 526.733276, 512.0, 375.0, 47.0 ],
+									"patching_rect" : [ 460.0, 524.0, 375.0, 47.0 ],
 									"style" : "",
 									"text" : "N.B. - You may need to restart audio after switching decoder settings.  To set a default decoder mode, change the arguments to the bpatcher."
 								}
@@ -2259,7 +2348,7 @@
 									"maxclass" : "ezdac~",
 									"numinlets" : 2,
 									"numoutlets" : 0,
-									"patching_rect" : [ 536.733276, 458.0, 45.0, 45.0 ],
+									"patching_rect" : [ 470.0, 470.0, 45.0, 45.0 ],
 									"style" : ""
 								}
 
@@ -2279,7 +2368,7 @@
 									"numinlets" : 7,
 									"numoutlets" : 0,
 									"offset" : [ 0.0, 0.0 ],
-									"patching_rect" : [ 526.733276, 378.0, 329.0, 132.0 ],
+									"patching_rect" : [ 460.0, 390.0, 329.0, 132.0 ],
 									"viewvisibility" : 1
 								}
 
@@ -2294,7 +2383,7 @@
 									"numinlets" : 7,
 									"numoutlets" : 7,
 									"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "signal", "signal" ],
-									"patching_rect" : [ 526.733276, 316.0, 329.0, 21.0 ],
+									"patching_rect" : [ 460.0, 343.0, 329.0, 21.0 ],
 									"style" : "",
 									"text" : "hoa.2d.optim~ 3 inPhase"
 								}
@@ -2310,7 +2399,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 117.0, 172.0, 58.0, 21.0 ],
+									"patching_rect" : [ 61.0, 172.0, 58.0, 21.0 ],
 									"style" : "",
 									"text" : "loadbang"
 								}
@@ -2356,7 +2445,7 @@
 									"numinlets" : 4,
 									"numoutlets" : 7,
 									"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "signal", "signal" ],
-									"patching_rect" : [ 526.733276, 258.0, 329.0, 21.0 ],
+									"patching_rect" : [ 460.0, 294.0, 329.0, 21.0 ],
 									"style" : "",
 									"text" : "hoa.2d.map~ 3 4"
 								}
@@ -2368,7 +2457,7 @@
 									"destination" : [ "obj-10", 0 ],
 									"disabled" : 0,
 									"hidden" : 1,
-									"midpoints" : [ 1125.5, 63.0, 993.0, 63.0, 993.0, 72.0, 942.5, 72.0 ],
+									"midpoints" : [ 1159.5, 160.0, 1117.0, 160.0, 1117.0, 169.0, 1024.56665, 169.0 ],
 									"source" : [ "obj-1", 0 ]
 								}
 
@@ -2378,7 +2467,7 @@
 									"destination" : [ "obj-16", 0 ],
 									"disabled" : 0,
 									"hidden" : 1,
-									"midpoints" : [ 1125.5, 45.0, 1002.0, 45.0, 1002.0, 36.0, 321.0, 36.0, 321.0, 69.0, 345.5, 69.0 ],
+									"midpoints" : [ 1159.5, 137.5, 469.5, 137.5 ],
 									"source" : [ "obj-1", 0 ]
 								}
 
@@ -2388,7 +2477,7 @@
 									"destination" : [ "obj-2", 0 ],
 									"disabled" : 0,
 									"hidden" : 1,
-									"midpoints" : [ 1125.5, 45.0, 1002.0, 45.0, 1002.0, 36.0, 534.0, 36.0, 534.0, 72.0, 557.5, 72.0 ],
+									"midpoints" : [ 1159.5, 137.5, 639.566589, 137.5 ],
 									"source" : [ "obj-1", 0 ]
 								}
 
@@ -2398,14 +2487,14 @@
 									"destination" : [ "obj-5", 0 ],
 									"disabled" : 0,
 									"hidden" : 1,
-									"midpoints" : [ 1125.5, 45.0, 1002.0, 45.0, 1002.0, 36.0, 717.0, 36.0, 717.0, 72.0, 740.5, 72.0 ],
+									"midpoints" : [ 1159.5, 137.5, 822.566589, 137.5 ],
 									"source" : [ "obj-1", 0 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-9", 3 ],
+									"destination" : [ "obj-24", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-10", 0 ]
@@ -2414,9 +2503,19 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-25", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-10", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-9", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
+									"midpoints" : [ 469.5, 238.5, 469.5, 238.5 ],
 									"source" : [ "obj-16", 0 ]
 								}
 
@@ -2426,7 +2525,7 @@
 									"destination" : [ "obj-9", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
-									"midpoints" : [ 126.5, 506.0, 425.999969, 506.0, 425.999969, 245.0, 536.233276, 245.0 ],
+									"midpoints" : [ 126.5, 506.0, 425.999969, 506.0, 425.999969, 268.0, 469.5, 268.0 ],
 									"source" : [ "obj-18", 0 ]
 								}
 
@@ -2436,7 +2535,28 @@
 									"destination" : [ "obj-9", 1 ],
 									"disabled" : 0,
 									"hidden" : 0,
+									"midpoints" : [ 639.566589, 238.5, 572.833313, 238.5 ],
 									"source" : [ "obj-2", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-9", 3 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"midpoints" : [ 1024.56665, 256.0, 779.5, 256.0 ],
+									"source" : [ "obj-24", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-9", 3 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"midpoints" : [ 1081.56665, 256.0, 779.5, 256.0 ],
+									"source" : [ "obj-25", 0 ]
 								}
 
 							}
@@ -2515,6 +2635,7 @@
 									"destination" : [ "obj-9", 2 ],
 									"disabled" : 0,
 									"hidden" : 0,
+									"midpoints" : [ 822.566589, 238.5, 676.166687, 238.5 ],
 									"source" : [ "obj-5", 0 ]
 								}
 
@@ -2656,35 +2777,35 @@
 		"dependency_cache" : [ 			{
 				"name" : "hoa.helpout_3.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/HoaLibrary-v2.0.1-beta-mac/misc/others/hoa.helpout",
-				"patcherrelativepath" : "../../../../Documents/Max 7/Packages/HoaLibrary-v2.0.1-beta-mac/misc/others/hoa.helpout",
+				"patcherrelativepath" : "../../../../../Documents/Max 7/Packages/HoaLibrary-v2.0.1-beta-mac/misc/others/hoa.helpout",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "hoa.helpheader.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/HoaLibrary-v2.0.1-beta-mac/misc/others",
-				"patcherrelativepath" : "../../../../Documents/Max 7/Packages/HoaLibrary-v2.0.1-beta-mac/misc/others",
+				"patcherrelativepath" : "../../../../../Documents/Max 7/Packages/HoaLibrary-v2.0.1-beta-mac/misc/others",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "hoa.2d.scope~.svg",
 				"bootpath" : "~/Documents/Max 7/Packages/HoaLibrary-v2.0.1-beta-mac/misc/object-palettes",
-				"patcherrelativepath" : "../../../../Documents/Max 7/Packages/HoaLibrary-v2.0.1-beta-mac/misc/object-palettes",
+				"patcherrelativepath" : "../../../../../Documents/Max 7/Packages/HoaLibrary-v2.0.1-beta-mac/misc/object-palettes",
 				"type" : "svg ",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "hoa.2d.map_help1.json",
 				"bootpath" : "~/Documents/Max 7/Packages/HoaLibrary-v2.0.1-beta-mac/misc/Presets",
-				"patcherrelativepath" : "../../../../Documents/Max 7/Packages/HoaLibrary-v2.0.1-beta-mac/misc/Presets",
+				"patcherrelativepath" : "../../../../../Documents/Max 7/Packages/HoaLibrary-v2.0.1-beta-mac/misc/Presets",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "hoa.helpcredit.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/HoaLibrary-v2.0.1-beta-mac/misc/others",
-				"patcherrelativepath" : "../../../../Documents/Max 7/Packages/HoaLibrary-v2.0.1-beta-mac/misc/others",
+				"patcherrelativepath" : "../../../../../Documents/Max 7/Packages/HoaLibrary-v2.0.1-beta-mac/misc/others",
 				"type" : "JSON",
 				"implicit" : 1
 			}
