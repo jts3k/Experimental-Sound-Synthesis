@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 34.0, 97.0, 1292.0, 633.0 ],
+		"rect" : [ 34.0, 79.0, 1301.0, 832.0 ],
 		"bgcolor" : [ 0.93, 0.93, 0.92, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
@@ -60,7 +60,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 0.0, 26.0, 1292.0, 607.0 ],
+						"rect" : [ 0.0, 26.0, 1301.0, 806.0 ],
 						"bgcolor" : [ 0.93, 0.93, 0.92, 1.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
@@ -359,7 +359,7 @@
 ,
 									"style" : "",
 									"text" : "autopattr",
-									"varname" : "u806005230"
+									"varname" : "u370000693"
 								}
 
 							}
@@ -641,7 +641,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 0.0, 26.0, 1292.0, 607.0 ],
+						"rect" : [ 0.0, 26.0, 1301.0, 806.0 ],
 						"bgcolor" : [ 0.93, 0.93, 0.92, 1.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
@@ -1987,7 +1987,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 34.0, 123.0, 1292.0, 607.0 ],
+						"rect" : [ 34.0, 105.0, 1301.0, 806.0 ],
 						"bgcolor" : [ 0.93, 0.93, 0.92, 1.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
@@ -2018,13 +2018,61 @@
 						"showontab" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
+									"bubble" : 1,
+									"bubblepoint" : 0.1,
+									"bubbleside" : 0,
+									"id" : "obj-22",
+									"linecount" : 2,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 862.0, 395.0, 380.0, 52.0 ],
+									"presentation_rect" : [ 862.0, 395.0, 0.0, 0.0 ],
+									"style" : "",
+									"text" : "Optimization settings.  \"inPhase\" sounds nice for a big speaker ring.  \"basic\" is better for Binaural."
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontface" : 0,
+									"fontname" : "Arial",
+									"fontsize" : 11.595187,
+									"hidden" : 1,
+									"id" : "obj-58",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 838.066589, 330.0, 70.0, 21.0 ],
+									"style" : "",
+									"text" : "loadmess 2"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontsize" : 11.595187,
+									"id" : "obj-34",
+									"items" : [ "basic", ",", "maxRe", ",", "inPhase" ],
+									"maxclass" : "umenu",
+									"numinlets" : 1,
+									"numoutlets" : 3,
+									"outlettype" : [ "int", "", "" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 838.066589, 356.0, 100.0, 21.0 ],
+									"style" : ""
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-25",
 									"maxclass" : "newobj",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
 									"patching_rect" : [ 1072.06665, 216.0, 42.0, 22.0 ],
-									"presentation_rect" : [ 1072.06665, 226.0, 0.0, 0.0 ],
 									"style" : "",
 									"text" : "*~ 0.5"
 								}
@@ -2045,14 +2093,16 @@
 							}
 , 							{
 								"box" : 								{
+									"bubble" : 1,
+									"bubblepoint" : 0.1,
+									"bubbleside" : 0,
 									"id" : "obj-21",
 									"linecount" : 3,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 794.566589, 281.0, 292.0, 47.0 ],
-									"presentation_rect" : [ 866.0, 255.0, 0.0, 0.0 ],
-									"style" : "",
+									"patching_rect" : [ 989.566589, 263.0, 292.0, 66.0 ],
+									"style" : "chiba",
 									"text" : "We can only encode mono sound sources.  If your source is stereo, you may want to \"fold it down\" by mixing the left and right channels"
 								}
 
@@ -2066,7 +2116,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 121.0, 16.0, 392.0, 87.0 ],
+									"patching_rect" : [ 56.0, 16.0, 396.0, 87.0 ],
 									"style" : "",
 									"text" : "These patches make use of the Higher Order Ambisonics (HOA) Library, available at http://www.mshparisnord.fr/hoalibrary/en/.  The HOA library provides objects for Max, PD, and VST plugins.  The library for Max should be copied to your \"packages\" folder.  You can read more about packages for Max by searching the Max Documentation (in the Help menu).",
 									"textcolor" : [ 0.30292, 0.30292, 0.30292, 1.0 ],
@@ -2085,7 +2135,7 @@
 									"mode" : 0,
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 121.0, 16.0, 392.0, 87.0 ],
+									"patching_rect" : [ 56.0, 16.0, 392.0, 87.0 ],
 									"proportion" : 0.39,
 									"rounded" : 0,
 									"style" : ""
@@ -2094,12 +2144,14 @@
 							}
 , 							{
 								"box" : 								{
+									"bubble" : 1,
+									"bubbleside" : 2,
 									"id" : "obj-7",
 									"linecount" : 2,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 121.0, 160.0, 150.0, 33.0 ],
+									"patching_rect" : [ 136.0, 141.0, 150.0, 52.0 ],
 									"style" : "",
 									"text" : "Spatialize individual sounds, or the entire field"
 								}
@@ -2175,22 +2227,22 @@
 												"filekind" : "audiofile",
 												"loop" : 1,
 												"content_state" : 												{
+													"basictuning" : [ 440 ],
+													"originallengthms" : [ 0.0 ],
+													"pitchshiftcent" : [ 0 ],
+													"pitchshift" : [ 1.0 ],
 													"quality" : [ "basic" ],
-													"formant" : [ 1.0 ],
-													"timestretch" : [ 0 ],
 													"slurtime" : [ 0.0 ],
 													"mode" : [ "basic" ],
-													"basictuning" : [ 440 ],
 													"pitchcorrection" : [ 0 ],
-													"originallengthms" : [ 0.0 ],
-													"originallength" : [ 0.0, "ticks" ],
+													"timestretch" : [ 0 ],
 													"originaltempo" : [ 120.0 ],
-													"pitchshiftcent" : [ 0 ],
 													"formantcorrection" : [ 0 ],
+													"originallength" : [ 0.0, "ticks" ],
 													"speed" : [ 1.0 ],
-													"pitchshift" : [ 1.0 ],
-													"followglobaltempo" : [ 0 ],
-													"play" : [ 0 ]
+													"play" : [ 0 ],
+													"formant" : [ 1.0 ],
+													"followglobaltempo" : [ 0 ]
 												}
 
 											}
@@ -2215,22 +2267,22 @@
 												"filekind" : "audiofile",
 												"loop" : 1,
 												"content_state" : 												{
+													"basictuning" : [ 440 ],
+													"originallengthms" : [ 0.0 ],
+													"pitchshiftcent" : [ 0 ],
+													"pitchshift" : [ 1.0 ],
 													"quality" : [ "basic" ],
-													"formant" : [ 1.0 ],
-													"timestretch" : [ 0 ],
 													"slurtime" : [ 0.0 ],
 													"mode" : [ "basic" ],
-													"basictuning" : [ 440 ],
 													"pitchcorrection" : [ 0 ],
-													"originallengthms" : [ 0.0 ],
-													"originallength" : [ 0.0, "ticks" ],
+													"timestretch" : [ 0 ],
 													"originaltempo" : [ 120.0 ],
-													"pitchshiftcent" : [ 0 ],
 													"formantcorrection" : [ 0 ],
+													"originallength" : [ 0.0, "ticks" ],
 													"speed" : [ 1.0 ],
-													"pitchshift" : [ 1.0 ],
-													"followglobaltempo" : [ 0 ],
-													"play" : [ 0 ]
+													"play" : [ 0 ],
+													"formant" : [ 1.0 ],
+													"followglobaltempo" : [ 0 ]
 												}
 
 											}
@@ -2255,22 +2307,22 @@
 												"filekind" : "audiofile",
 												"loop" : 1,
 												"content_state" : 												{
+													"basictuning" : [ 440 ],
+													"originallengthms" : [ 0.0 ],
+													"pitchshiftcent" : [ 0 ],
+													"pitchshift" : [ 1.0 ],
 													"quality" : [ "basic" ],
-													"formant" : [ 1.0 ],
-													"timestretch" : [ 0 ],
 													"slurtime" : [ 0.0 ],
 													"mode" : [ "basic" ],
-													"basictuning" : [ 440 ],
 													"pitchcorrection" : [ 0 ],
-													"originallengthms" : [ 0.0 ],
-													"originallength" : [ 0.0, "ticks" ],
+													"timestretch" : [ 0 ],
 													"originaltempo" : [ 120.0 ],
-													"pitchshiftcent" : [ 0 ],
 													"formantcorrection" : [ 0 ],
+													"originallength" : [ 0.0, "ticks" ],
 													"speed" : [ 1.0 ],
-													"pitchshift" : [ 1.0 ],
-													"followglobaltempo" : [ 0 ],
-													"play" : [ 0 ]
+													"play" : [ 0 ],
+													"formant" : [ 1.0 ],
+													"followglobaltempo" : [ 0 ]
 												}
 
 											}
@@ -2295,22 +2347,22 @@
 												"filekind" : "audiofile",
 												"loop" : 1,
 												"content_state" : 												{
+													"basictuning" : [ 440 ],
+													"originallengthms" : [ 0.0 ],
+													"pitchshiftcent" : [ 0 ],
+													"pitchshift" : [ 1.0 ],
 													"quality" : [ "basic" ],
-													"formant" : [ 1.0 ],
-													"timestretch" : [ 0 ],
 													"slurtime" : [ 0.0 ],
 													"mode" : [ "basic" ],
-													"basictuning" : [ 440 ],
 													"pitchcorrection" : [ 0 ],
-													"originallengthms" : [ 0.0 ],
-													"originallength" : [ 0.0, "ticks" ],
+													"timestretch" : [ 0 ],
 													"originaltempo" : [ 120.0 ],
-													"pitchshiftcent" : [ 0 ],
 													"formantcorrection" : [ 0 ],
+													"originallength" : [ 0.0, "ticks" ],
 													"speed" : [ 1.0 ],
-													"pitchshift" : [ 1.0 ],
-													"followglobaltempo" : [ 0 ],
-													"play" : [ 0 ]
+													"play" : [ 0 ],
+													"formant" : [ 1.0 ],
+													"followglobaltempo" : [ 0 ]
 												}
 
 											}
@@ -2329,12 +2381,15 @@
 							}
 , 							{
 								"box" : 								{
+									"bubble" : 1,
+									"bubblepoint" : 0.1,
+									"bubbleside" : 0,
 									"id" : "obj-12",
 									"linecount" : 3,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 460.0, 524.0, 375.0, 47.0 ],
+									"patching_rect" : [ 460.0, 524.0, 375.0, 66.0 ],
 									"style" : "",
 									"text" : "N.B. - You may need to restart audio after switching decoder settings.  To set a default decoder mode, change the arguments to the bpatcher."
 								}
@@ -2385,7 +2440,7 @@
 									"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "signal", "signal" ],
 									"patching_rect" : [ 460.0, 343.0, 329.0, 21.0 ],
 									"style" : "",
-									"text" : "hoa.2d.optim~ 3 inPhase"
+									"text" : "hoa.2d.optim~ 3"
 								}
 
 							}
@@ -2417,7 +2472,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "list", "list", "list" ],
 									"parameter_enable" : 1,
-									"patching_rect" : [ 117.0, 196.625, 300.0, 300.0 ],
+									"patching_rect" : [ 61.0, 198.625, 300.0, 300.0 ],
 									"save" : 0,
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
@@ -2525,7 +2580,7 @@
 									"destination" : [ "obj-9", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
-									"midpoints" : [ 126.5, 506.0, 425.999969, 506.0, 425.999969, 268.0, 469.5, 268.0 ],
+									"midpoints" : [ 70.5, 506.0, 425.999969, 506.0, 425.999969, 268.0, 469.5, 268.0 ],
 									"source" : [ "obj-18", 0 ]
 								}
 
@@ -2632,11 +2687,29 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-3", 6 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-34", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-9", 2 ],
 									"disabled" : 0,
 									"hidden" : 0,
 									"midpoints" : [ 822.566589, 238.5, 676.166687, 238.5 ],
 									"source" : [ "obj-5", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-34", 0 ],
+									"disabled" : 0,
+									"hidden" : 1,
+									"source" : [ "obj-58", 0 ]
 								}
 
 							}
@@ -2770,42 +2843,42 @@
  ],
 		"lines" : [  ],
 		"parameters" : 		{
-			"obj-1::obj-18" : [ "hoa.2d.map", "hoa.2d.map", 0 ],
-			"obj-3::obj-1" : [ "hoa.2d.map[3]", "hoa.2d.map[3]", 0 ]
+			"obj-3::obj-1" : [ "hoa.2d.map[3]", "hoa.2d.map[3]", 0 ],
+			"obj-1::obj-18" : [ "hoa.2d.map", "hoa.2d.map", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
 				"name" : "hoa.helpout_3.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/HoaLibrary-v2.0.1-beta-mac/misc/others/hoa.helpout",
-				"patcherrelativepath" : "../../../../../Documents/Max 7/Packages/HoaLibrary-v2.0.1-beta-mac/misc/others/hoa.helpout",
+				"bootpath" : "/Users/Shared/Max 7/Packages/HoaLibrary-v2.0.1-beta-mac/misc/others/hoa.helpout",
+				"patcherrelativepath" : "../../../../../../Shared/Max 7/Packages/HoaLibrary-v2.0.1-beta-mac/misc/others/hoa.helpout",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "hoa.helpheader.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/HoaLibrary-v2.0.1-beta-mac/misc/others",
-				"patcherrelativepath" : "../../../../../Documents/Max 7/Packages/HoaLibrary-v2.0.1-beta-mac/misc/others",
+				"bootpath" : "/Users/Shared/Max 7/Packages/HoaLibrary-v2.0.1-beta-mac/misc/others",
+				"patcherrelativepath" : "../../../../../../Shared/Max 7/Packages/HoaLibrary-v2.0.1-beta-mac/misc/others",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "hoa.2d.scope~.svg",
-				"bootpath" : "~/Documents/Max 7/Packages/HoaLibrary-v2.0.1-beta-mac/misc/object-palettes",
-				"patcherrelativepath" : "../../../../../Documents/Max 7/Packages/HoaLibrary-v2.0.1-beta-mac/misc/object-palettes",
+				"bootpath" : "/Users/Shared/Max 7/Packages/HoaLibrary-v2.0.1-beta-mac/misc/object-palettes",
+				"patcherrelativepath" : "../../../../../../Shared/Max 7/Packages/HoaLibrary-v2.0.1-beta-mac/misc/object-palettes",
 				"type" : "svg ",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "hoa.2d.map_help1.json",
-				"bootpath" : "~/Documents/Max 7/Packages/HoaLibrary-v2.0.1-beta-mac/misc/Presets",
-				"patcherrelativepath" : "../../../../../Documents/Max 7/Packages/HoaLibrary-v2.0.1-beta-mac/misc/Presets",
+				"bootpath" : "/Users/Shared/Max 7/Packages/HoaLibrary-v2.0.1-beta-mac/misc/Presets",
+				"patcherrelativepath" : "../../../../../../Shared/Max 7/Packages/HoaLibrary-v2.0.1-beta-mac/misc/Presets",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "hoa.helpcredit.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/HoaLibrary-v2.0.1-beta-mac/misc/others",
-				"patcherrelativepath" : "../../../../../Documents/Max 7/Packages/HoaLibrary-v2.0.1-beta-mac/misc/others",
+				"bootpath" : "/Users/Shared/Max 7/Packages/HoaLibrary-v2.0.1-beta-mac/misc/others",
+				"patcherrelativepath" : "../../../../../../Shared/Max 7/Packages/HoaLibrary-v2.0.1-beta-mac/misc/others",
 				"type" : "JSON",
 				"implicit" : 1
 			}
