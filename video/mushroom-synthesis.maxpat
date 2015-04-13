@@ -43,13 +43,13 @@
 					"bubbleside" : 3,
 					"bubbletextmargin" : 9,
 					"id" : "obj-23",
-					"linecount" : 5,
+					"linecount" : 4,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 86.0, 37.0, 168.0, 86.0 ],
+					"patching_rect" : [ 86.0, 37.0, 193.0, 72.0 ],
 					"style" : "",
-					"text" : "Based on the way-out toturial & PD patch by Jerobeam Fenderson: https://youtu.be/rtR63-ecUNo"
+					"text" : "Based on the way-out tutorial & PD patch by Jerobeam Fenderson: https://youtu.be/rtR63-ecUNo"
 				}
 
 			}
@@ -63,7 +63,7 @@
 					"outlettype" : [ "signal", "signal", "", "float", "list" ],
 					"parameter_enable" : 1,
 					"patching_rect" : [ 321.0, 626.0, 93.0, 38.0 ],
-					"presentation_rect" : [ 0.0, 0.0, 50.0, 38.0 ],
+					"presentation_rect" : [ 0.0, 0.0, 50.0, 24.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "live.gain~",
